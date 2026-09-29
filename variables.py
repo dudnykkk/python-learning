@@ -22,3 +22,15 @@ name = input()
 print("Привет,", name)
 name1 = input()
 print("Привет,", name1)
+
+#29.09 Название любимой команды. Ввод - Барселона.
+name = input()
+print(name, "- чемпион!")
+
+# Ввод данных 1. I love. 2. Python. 3. So much.
+name = input()
+name1 = input()
+name2 = input()
+print(name)
+print(name1)
+print(name2)
