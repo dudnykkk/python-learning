@@ -34,3 +34,5 @@ name2 = input()
 print(name)
 print(name1)
 print(name2)
+
+# 30.09 в поездке. Пропуск
