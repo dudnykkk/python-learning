@@ -39,4 +39,5 @@ print(name2)
 #01.10 Авария в поездке.
 
 #02.10 Новая Тема. SEP END PEP 8
-print(sep)
+
+print("SEP END")
