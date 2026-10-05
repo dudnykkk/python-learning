@@ -57,20 +57,62 @@
 
 
 # Тема урока: работа с целыми числами
-num1 = 5
-num2 = 3
-num3 = num1 + num2
-print(num3)
+# num1 = 5
+# num2 = 3
+# num3 = num1 + num2
+# print(num3)
 
-a = 3
-b = 2
+# a = 3
+# b = 2
 
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
+# print(a + b)
+# print(a - b)
+# print(a * b)
+# print(a / b)
 
-s = '1992'
-year = int(s)
+# s = '1992'
+# year = int(s)
 
-print(year) # ИЗ ТЕКСТА В ЧИСЛО
+# # print(year) # ИЗ ТЕКСТА В ЧИСЛО
+# a = 2
+# print(a, "a")
+
+# a = int(input())
+# b = a + 1
+# c = b + 1
+# print(a)
+# print(b)
+# print(c)
+# # print(a, b, c, sep=/n )
+
+# a = 9
+# b = 11
+# c = 2
+# print(a + b + c)
+
+# a = 15
+# a = 20
+# print(a)
+
+# num1 = int(input())
+# num2 = int(input())
+# num3 = int(input())
+# num4 = int(input())
+# print(num1 + num2 + num3 + num4)
+
+# a = int(input())
+# print(a) 1
+
+
+# СЛЕДУЮЩЕЕ И ПРЕДЫДУЩЕЕ
+# num = int(input())
+# num1 = num + 1
+# num2 = num - 1
+# print("Следующее за числом", num, "число:", num1)
+# print("Для числа", num, "Предыдущее число:", num2)
+
+a = int(input())
+v = a**3
+s = 6 * a**2
+print("Обьем: ", v)
+print("Площадь полной поверхности =", s)
