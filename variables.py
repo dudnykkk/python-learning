@@ -111,8 +111,25 @@
 # print("Следующее за числом", num, "число:", num1)
 # print("Для числа", num, "Предыдущее число:", num2)
 
-a = int(input())
-v = a**3
-s = 6 * a**2
-print("Обьем: ", v)
-print("Площадь полной поверхности =", s)
+# a = int(input())
+# v = a**3
+# s = 6 * a**2
+# print("Обьем: ", v)
+# print("Площадь полной поверхности =", s)
+
+#06.10 stepik 
+
+# a = int(input())
+# b = int(input())
+# print(a, "+", b, "=", a + b)
+# print(a, "-", b, "=", a - b)
+# print(a, "*", b, "=", a * b)
+#Арифметическая прогрессия
+# a1 = int(input())
+# d = int(input())
+# n = int(input())
+# an = a1 + d * (n - 1)
+# print(an)
+
+x = int(input())
+print(x, x + x, x * 3, x * 4, x * 5, sep="---")
