@@ -131,5 +131,11 @@
 # an = a1 + d * (n - 1)
 # print(an)
 
-x = int(input())
-print(x, x + x, x * 3, x * 4, x * 5, sep="---")
+# x = int(input())
+# print(x, x + x, x * 3, x * 4, x * 5, sep="---")
+
+
+#РАБОТА С ЦЕЛЬНЫМИ ЧИСЛАМИ 07.10
+print(-10**2)  # -100
+
+print(5 * 3**2)  # 45
