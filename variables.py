@@ -140,4 +140,6 @@ print(-10**2)  # -100
 
 print(5 * 3**2)  # 45
 
-print(STEPIK)
+print(STEPIK) 
+
+print(continue)
