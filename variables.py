@@ -221,6 +221,79 @@
 # print(f'{minutes} мин - это {hours} час {minutes_per_hours} минут.')
 
 
-place = int(input())
-coupe = (place + 3) // 4
-print(f'{coupe} - это номер купе, тут находится ваше место.')
+# place = int(input())
+# coupe = (place + 3) // 4
+# print(f'{coupe} - это номер купе, тут находится ваше место.')
+
+
+
+# # Программа получения цифр двузначного числа:
+# num = 17
+# a = num // 10 # Находим первую цифру числа
+# b = num % 10 # Находим второю цифру числа
+# print(a, b)
+
+# Программа получения цифр трёхзначного числа:
+# num = 873
+# a = num // 100 # Первая цифра числа
+# b = (num % 100) // 10 # Средняя цифра числа
+# c = num % 10 # Последня цифра числа 
+# print(a, b, c,)
+
+
+# Последняя цифра: num % 10
+# Предпоследняя цифра: (num // 10) % 10
+# Предпредпоследняя цифра: (num // 100) % 10
+
+# Третья цифра: (num // 10 ** (n - 3)) % 10
+# Вторая цифра: (num // 10 ** (n - 2)) % 10
+# Первая цифра: num // 10 ** (n - 1)
+
+
+# num = int(input())
+# last_digit = num % 10
+# first_digit = num // 10
+
+# print('Искомое число =', last_digit * 10 + first_digit)
+
+# num = int(input())
+# last_digit = num % 10
+# half_digit = (num % 100) // 10
+# first_digit = num // 100
+# print("Сумма цифр =", last_digit + half_digit + first_digit)
+# print("Произведение цифр =", last_digit * half_digit * first_digit)
+# 123
+# 132
+# 213
+# 231
+# 312
+# 321
+
+# num = int(input())
+# last_digit = num % 10
+# half_digit = (num % 100) // 10
+# first_digit = num // 100
+# print(first_digit,half_digit,last_digit, sep = '')
+# print(first_digit, last_digit, half_digit, sep = '')
+# print(half_digit, first_digit, last_digit, sep = '')
+# print(half_digit, last_digit, first_digit, sep = '')
+# print(last_digit, first_digit, half_digit, sep = '')
+# print(last_digit, half_digit, first_digit, sep = '')
+
+# Последняя цифра: num % 10
+# Предпоследняя цифра: (num // 10) % 10
+# Предпредпоследняя цифра: (num // 100) % 10
+# ...
+# Третья цифра: (num // 10 ** (n - 3)) % 10
+# Вторая цифра: (num // 10 ** (n - 2)) % 10
+# Первая цифра: num // 10 ** (n - 1)
+3281
+num = int(input())
+a = num // 1000
+b = (num % 1000) // 100
+c = (num % 100) // 10
+d = num % 10
+print('Цифра в позиции тысяч равна', a)
+print('Цифра в позиции сотен равна', b)
+print('Цифра в позиции десятков равна', c)
+print('Цифра в позиции единиц равна', d)
