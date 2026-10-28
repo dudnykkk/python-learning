@@ -21,7 +21,18 @@
 #     print(num1, 'неравны', num2)
 
 
-age = int(input())
-if 3 <= age <= 6:
-    print('Вы ребёнок')
+# age = int(input())
+# if 3 <= age <= 6:
+#     print('Вы ребёнок')
+
+
+num = int(input())
+
+last_digit = num % 10
+first_digit = num // 10
+
+if last_digit == first_digit:
+    print('ДА')
+else:
+    print('НЕТ')
 
