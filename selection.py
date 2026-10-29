@@ -26,13 +26,15 @@
 #     print('Вы ребёнок')
 
 
-num = int(input())
+# num = int(input())
 
-last_digit = num % 10
-first_digit = num // 10
+# last_digit = num % 10
+# first_digit = num // 10
 
-if last_digit == first_digit:
-    print('ДА')
-else:
-    print('НЕТ')
+# if last_digit == first_digit:
+#     print('ДА')
+# else:
+#     print('НЕТ')
 
+
+print("повтор")
