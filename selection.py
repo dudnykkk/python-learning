@@ -37,4 +37,58 @@
 #     print('НЕТ')
 
 
-print("повтор")
+# num1, num2 = int(input()), int(input())
+
+# counter = 0
+# if num1 % 2 == 0:
+#     counter = counter + 1
+# if num2 % 2 == 0:
+#     counter = counter + 1
+
+# print(counter)
+
+
+# password = input()
+# print("Введите пароль еще раз для проверки")
+# password1 = input()
+
+# if password == password1:
+#     print('Пароль принят')
+# else:
+#     print('Пароль не принят')
+
+
+
+# num1 = int(input())
+
+# if num1 % 2 == 0:
+#     print('Четное')
+# else:
+#     print('Нечетное')
+
+
+# age = int(input())
+
+# if age >= 18:
+#     print('Доступ разрешен')
+# else:
+#     print('Доступ запрещен')
+
+
+# a = int(input())
+# b = int(input())
+
+# if a <= b:
+#     print(a)
+# else:
+#     print(b)
+
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a - b == b - c:
+    print('YES')
+else:
+    print('NO')
