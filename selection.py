@@ -84,11 +84,134 @@
 #     print(b)
 
 
-a = int(input())
-b = int(input())
-c = int(input())
+# a = int(input())
+# b = int(input())
+# c = int(input())
 
-if a - b == b - c:
-    print('YES')
-else:
-    print('NO')
+# if a - b == b - c:
+#     print('YES')
+# else:
+#     print('NO')
+
+
+
+# num = int(input())   РАВНОСТЬ 1614
+
+# a = num // 1000
+# b = (num % 1000) // 100
+# c = (num % 100) // 10
+# d = num % 10
+
+# if a + d == b - c:
+#     print('ДА')
+# else:
+#     print("НЕТ")
+
+
+# a = int(input())
+# b = int(input())
+# c = int(input())
+
+# counter = 0
+# if a % 2 == 0:
+#     counter = counter + 1
+# if b % 2 == 0:
+#     counter = counter + 1
+# if c % 2 == 0:
+#     counter = counter + 1
+#     print(counter)
+# if a < 0 and b < 0 and c < 0:
+#     print(0)
+
+
+
+# a = int(input())
+# b = int(input())
+# c = int(input())
+
+# if a > 0:
+#     a = a
+# else:
+#     a = 0
+# if b > 0:
+#     b = b
+# else:
+#     b = 0
+# if c > 0:
+#     c = c
+# else:
+#     c = 0
+# print(a + b + c)
+
+
+# a, b, c = int(input()), int(input()), int(input())  #ВЫЧИСЛЕНИЕ СУММЫ ПОЛОЖИТЕЛЬНЫХ ЧИСЕЛ
+# total = 0 
+# if a > 0:
+#     total = total + a
+# if b > 0:
+#     total = total + b
+# if c > 0:
+#     total = total + c
+# print(total)
+
+
+# 
+
+# age = int(input())
+
+# if age <= 13:
+#     print('детство')
+# if age >= 14 and age <=24:
+#     print('молодость')
+# if age >= 25 and age <=59:
+#     print('зрелость')
+# if age >= 60:
+#     print('старость')
+
+
+
+# a = int(input()) # ПОИСК МИНИМАЛЬНОГО ЧИСЛА ИЗ 4-ЕХ
+# b = int(input())
+# c = int(input())
+# d = int(input())
+
+# if a < b:
+#     min_ab = a
+# else:
+#     min_ab = b
+
+# if c < d:
+#     min_cd = c
+# else:
+#     min_cd = d
+# if min_ab < min_cd:
+#     print(min_ab)
+# else:
+#     print(min_cd)
+
+
+# print(min(int(input()), int(input()), int(input()), int(input())))
+
+# print("*"*17)
+# print("*", "*", sep="               ")
+# print("*", "*", sep="               ")
+# print("*"*17)
+
+
+
+# a = int(input()) 
+# b = int(input())
+# num = (a + b)**2
+# num1 = a**2 + b**2
+# print("Квадрат суммы", a, "и", b, "равен", num)
+# print("Сумма квадратов", a, "и", b, "равна", num1)
+
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# d = int(input())
+# num = a**b + c**d
+# print(num)
+
+a = int(input())
+print(a + (a * 11) + (a * 111))
