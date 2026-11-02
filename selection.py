@@ -213,5 +213,31 @@
 # num = a**b + c**d
 # print(num)
 
+# a = int(input())
+# print(a + (a * 11) + (a * 111))
+
+
+# x = int(input())
+# y = int(input())
+
+# if x > 2 or y >= 10:
+#     print("Правда")
+# else:
+#     print("ноу")
+                  
+
+# river1 = 'Хуанхэ'
+# river2 = 'Темза'
+
+# if (river1 == 'Хуанхэ' or river1 == 'Дунай') and river2 == 'Тигр':
+#     print("ПАРАДА")
+# else:
+#     print("NO")
+
+
 a = int(input())
-print(a + (a * 11) + (a * 111))
+
+if a > -1 and a < 17:
+    print("Принадлежит")
+else:
+    print("Не принадлежит")
