@@ -235,9 +235,22 @@
 #     print("NO")
 
 
-a = int(input())
+# a = int(input())
 
-if a > -1 and a < 17:
+# if a > -1 and a < 17:
+#     print("Принадлежит")
+# else:
+#     print("Не принадлежит")
+
+
+# a = int(input())
+# if a <= -3 or a >= 7:
+#     print("Принадлежит")
+# else:
+#     print("Не принадлежит")
+
+a = int(input())
+if (-30 < a <= -2) or (7 < a <= 25):
     print("Принадлежит")
 else:
     print("Не принадлежит")
