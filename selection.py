@@ -249,8 +249,29 @@
 # else:
 #     print("Не принадлежит")
 
+# a = int(input())
+# if (-30 < a <= -2) or (7 < a <= 25):
+#     print("Принадлежит")
+# else:
+#     print("Не принадлежит")
+
+
+# num = int(input())  
+# if (1000 <= num <=9999) and (num % 7 == 0 or num % 17 == 0):
+#     print("YES")
+# else:
+#     print("NO")
+
+
+# a+b>c НЕРАВНОРОЖДЕННЫЙ ТРЕУГОЛЬНИК
+# a+c>b
+# b+c>a
+
 a = int(input())
-if (-30 < a <= -2) or (7 < a <= 25):
-    print("Принадлежит")
+b = int(input())
+c = int(input())
+
+if (a + b > c) and (a + c > b) and b + c > a:
+    print("YES")
 else:
-    print("Не принадлежит")
+    print("NO")
