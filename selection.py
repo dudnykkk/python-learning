@@ -267,14 +267,38 @@
 # a+c>b
 # b+c>a
 
-a = int(input())
-b = int(input())
-c = int(input())
+# a = int(input())
+# b = int(input())
+# c = int(input())
 
-if (a + b > c) and (a + c > b) and b + c > a:
+# if (a + b > c) and (a + c > b) and b + c > a:
+#     print("YES")
+# else:
+#     print("NO")
+
+
+# print("Повтор")
+
+# year = int(input())
+
+# if (year % 4 == 0 and not year % 100 == 0) or (year % 400 == 0):
+#     print("YES")
+# else:
+#     print("NO")
+# узнать какой год високосный
+# year = int(input())  # водим какой год хотим узнать високостный или нет
+  # год високостный это год который делится на 4 но не делится на сто и делится на 400.
+  # решение через метод if else
+
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+
+if (x1 >= x2 -1 and x1 <= x2 +1) and (y1 >= y2 -1 and y1 <= y2 +1):
     print("YES")
 else:
     print("NO")
-
-
-print("Повтор")
+    
+    
+    # (1 <= x1 <= 8 and 1 <= x2 <= 8 and 1 <= y1 <= 8 and 1 <= y2 <=8)
