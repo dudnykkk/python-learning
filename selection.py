@@ -346,17 +346,83 @@
 # else:
 #     print("Don't know")
 
-a = int(input())   # ПРОВЕРКА КАКОЙ ВИД ТРЕУГОЛЬНИКА
+# a = int(input())   # ПРОВЕРКА КАКОЙ ВИД ТРЕУГОЛЬНИКА
+# b = int(input())
+# c = int(input())
+
+# if a == b == c:
+#     print("Равносторонний")
+
+# elif a == b or b == c or a == c:
+#     print("Равнобедренный")
+
+# elif a != b and b != c and c != a:
+#     print("Разносторонний")
+# else:
+#     print("Возможно ты ввел текст")
+
+
+# a = int(input())    #  ПОИСК СРЕДНЕГО ЧИСЛА ИЗ 3 ЗАДАННЫХ
+# b = int(input())
+# c = int(input())
+
+# if a <= b <= c:
+#     print (b)
+# elif a <= c <= b:
+#     print(c)
+# elif b <= a <= c:
+#     print(a)
+# elif b <= c <= a:
+#     print(c)
+# elif c <= b <= a:
+#     print(b)
+# elif c <= a <= b:
+#     print(a)
+
+
+# ВЫЧЕСЛЕНИЕ КОЛ-ВА ДНЕЙ В МЕСЯЦЕ
+
+# a = int(input())
+
+# if a == 1 or a == 3 or a == 5 or a == 7 or a == 8 or a == 10 or a == 12:
+#     print("31")
+# elif a == 4 or a == 6 or a == 9 or a == 11:
+#     print("30")
+# else:
+#     print("28")
+
+
+# month = int(input())
+# if month == 2:
+#     print('28')
+# else:
+#     print(30 + (month + month // 8) % 2)
+
+#ПРОВЕРКА ВЕСОВОЙ КАТЕГОРИИ БОКСЕРА
+
+# a = int(input())
+
+# if a < 60:
+#     print("Легкий вес")
+# elif a >= 60 and a < 64:
+#     print("Первый полусредний вес")
+# elif a >= 64 and a < 69:
+#     print("Полусредний вес") 
+
+a = int(input())
 b = int(input())
-c = int(input())
+c = input()
 
-if a == b == c:
-    print("Равносторонний")
-
-elif a == b or b == c or a == c:
-    print("Равнобедренный")
-
-elif a != b and b != c and c != a:
-    print("Разносторнний")
+if c == "+":
+    print(a + b)
+elif c == "*":
+    print(a * b)
+elif c == "-":
+    print(a - b)
+elif c == "/":
+    if b == 0:
+        print("На ноль делить нельзя!")
+    else:
+        print(a / b)
 else:
-    print("Возможно ты ввел текст")
+    print("Неверная операция")
