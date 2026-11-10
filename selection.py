@@ -59,7 +59,7 @@
 
 
 
-# num1 = int(input())
+# num1 = int(input()) # ЧЕТНОЕ ЧИСЛО
 
 # if num1 % 2 == 0:
 #     print('Четное')
@@ -409,20 +409,108 @@
 # elif a >= 64 and a < 69:
 #     print("Полусредний вес") 
 
-a = int(input())
-b = int(input())
-c = input()
+# a = int(input())
+# b = int(input())
+# c = input()
 
-if c == "+":
-    print(a + b)
-elif c == "*":
-    print(a * b)
-elif c == "-":
-    print(a - b)
-elif c == "/":
-    if b == 0:
-        print("На ноль делить нельзя!")
-    else:
-        print(a / b)
-else:
-    print("Неверная операция")
+# if c == "+":
+#     print(a + b)
+# elif c == "*":
+#     print(a * b)
+# elif c == "-":
+#     print(a - b)
+# elif c == /":
+#     if b == 0:
+#         print("На ноль делить нельзя!")
+#     else:
+#         print(a / b)
+# else:
+#     print("Неверная операция")
+
+
+# a, b, op = input(), input(), input()
+# if op not in ('+', '-', '*', '/'):
+#     print("Неверная операция")
+# else:
+#     print("На ноль делить нельзя!" if op == '/' and b == '0' else eval(a + op + b))
+
+
+
+# a = input()   # ПОИСК
+# b = input()
+
+# if (a == "красный") and (b == "красный"):
+#         print("красный")
+# elif (a == "желтый") and (b == "желтый"):
+#     print("желтый")
+# elif (a == "синий") and (b == "синий"):
+#     print("синий")
+# elif (a == "красный") and (b == "синий") or (a == "синий") and (b == "красный"):
+#         print("фиолетовый")
+# elif (a == "красный") and (b == "желтый") or (a == "желтый") and (b == "красный"):
+#         print("оранжевый")
+# elif (a == "красный") and (b == "желтый") or (a == "желтый") and (b == "красный"):
+#         print("оранжевый")
+# elif (a == "синий") and (b == "желтый") or (a == "желтый") and (b == "синий"):
+#         print("зеленый")
+# else:
+#     print("ошибка цвета")
+# if a != "красный" or a != "зеленый" or a != "синий":
+#     print("ошибка цвета")
+#     if b != "красный" or b != "зеленый" or b != "синий":
+#         print("ошибка цвета")
+# if (a == "красный"  b == "красный"):
+#     print("красный")
+
+
+# num1 = int(input()) # ЧЕТНОЕ - НЕЧЕТНОЕ ЧИСЛО РУЛЕТКА КАЗИНО 
+
+# if num1 == 0:
+#     print("зеленый")
+# elif num1 >= 1 and num1 <= 10:
+#     if num1 % 2 == 0:
+#         print("черный")
+#     else:
+#         print("красный")
+# elif num1 >= 11 and num1 <= 18:
+#     if num1 % 2 == 0:
+#         print("красный")
+#     else:
+#         print("черный")
+# elif num1 >= 19 and num1 <= 28:
+#     if num1 % 2 == 0:
+#         print("черный")
+#     else:
+#         print("красный")
+# elif num1 >= 29 and num1 <= 36:
+#     if num1 % 2 == 0:
+#         print("красный")
+#     else:
+#         print("черный")
+# else:
+#     print("ошибка ввода")
+# if num1 % 2 == 0:
+#     print('Четное')
+# else:
+#     print('Нечетное')
+
+
+a1 = int(input())
+b1 = int(input())
+a2 = int(input())
+b2 = int(input())
+
+if b1 < a2 or b2 < a1:
+    print("пустое множество")
+elif b1 == a2:
+    print(a2)
+elif b2 == a1:
+    print(a1)
+elif a2 > b1 and b1 < b2:
+    print(a2, b1)
+elif a2 < a1 and b1 > b2:
+    print(a1, b2)
+elif a1 >= a2 and b2 >= b1:
+    print(a1, b1)
+elif a1 <= a2 and b2 <= b1:
+    print(a2, b2)
