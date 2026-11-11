@@ -495,22 +495,116 @@
 #     print('Нечетное')
 
 
-a1 = int(input())
-b1 = int(input())
-a2 = int(input())
-b2 = int(input())
+# a1 = int(input())     # ПЕРЕСЕЧЕНИЕ ОТРЕЗКОВ !!!!!!!!!
+# b1 = int(input())
+# a2 = int(input())
+# b2 = int(input())
 
-if b1 < a2 or b2 < a1:
-    print("пустое множество")
-elif b1 == a2:
-    print(a2)
-elif b2 == a1:
-    print(a1)
-elif a2 > b1 and b1 < b2:
-    print(a2, b1)
-elif a2 < a1 and b1 > b2:
-    print(a1, b2)
-elif a1 >= a2 and b2 >= b1:
-    print(a1, b1)
-elif a1 <= a2 and b2 <= b1:
-    print(a2, b2)
+# if b1 < a2 or b2 < a1:
+#     print("пустое множество")
+# elif b1 == a2:
+#     print(a2)
+# elif b2 == a1:
+#     print(a1)
+# elif a2 > b1 and b1 < b2:
+#     print(a2, b1)
+# elif a2 < a1 and b1 > b2:
+#     print(a1, b2)
+# elif a1 >= a2 and b2 >= b1:
+#     print(a1, b1)
+# elif a1 <= a2 and b2 <= b1:
+#     print(a2, b2)
+    
+# num = int(input())
+
+# if num % 2 == 1:
+#     print("Нечетное")
+# else:
+#     print("ЧЕТНОЕ")
+
+
+
+# EXAM 5 11.11.26
+
+# num = int(input())
+
+# if num % 100 == 0:
+#     print("YES")
+# else:
+#     print("NO")
+
+# x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+
+# if (x1 + y1 + x2 + y2) % 2 == 0:
+#     print("YES")
+# else:
+#     print("NO")
+
+# age = int(input())
+# sex = input()
+
+# if age >= 10 and age <=15 and sex == "f":
+#     print("YES")
+# else:
+#     print("NO")
+
+
+# num = int(input())
+
+# if num == 1:
+#     print("I")
+# elif num == 2:
+#     print("II")
+# elif num == 3:
+#     print("III")
+# elif num == 4:
+#     print("IV")
+# elif num == 5:
+#     print("V")
+# elif num == 6:
+#     print("VI")
+# elif num == 7:
+#     print("VII")
+# elif num == 8:
+#     print("VIII")
+# elif num == 9:
+#     print("IX")
+# elif num == 10:
+#     print("X")
+# else:
+#     print("ошибка")
+
+# num = int(input())
+
+# if num % 2 == 1:
+#     print("YES")
+# elif num >=2 and num <=5:
+#     if num % 2 == 0:
+#         print("NO")
+# elif num >= 6 and num <= 20:
+#     if num % 2 == 0:
+#         print("YES")
+# elif num > 20:
+#     if num % 2 == 0:
+#         print("NO")
+
+
+# x1 = int(input()) #ХОД СЛОНОМ
+# y1 = int(input())
+# x2 = int(input())
+# y2 = int(input())
+
+# if x1 + y1 == x2 + y2 or x1 - x2 == y1 - y2:
+#     print("YES")
+# else:
+#     print("NO")
+
+x1, y1 = int(input()), int(input())
+x2, y2 = int(input()), int(input())
+
+if (x1 - x2 == 1 or x1 - x2 == -1) and (y1 - y2 == -2 or y1 - y2 == 2):
+    print("YES")
+elif (x1 - x2 == 2 or x1 - x2 == -2) and (y1 - y2 == -1 or y1 - y2 == 1):
+    print("YES")
+else:
+    print("NO")
