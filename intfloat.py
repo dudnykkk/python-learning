@@ -75,19 +75,19 @@
 # print(abs(a1) + abs(a2) + abs(a3) + abs(a4) + abs(a5))
 
 
-num = int(input())
+# num = int(input())
 
-a = num // 100 # Первая цифра числа
-b = (num % 100) // 10 # Средняя цифра числа
-c = num % 10 # Последня цифра числа 
+# a = num // 100 # Первая цифра числа
+# b = (num % 100) // 10 # Средняя цифра числа
+# c = num % 10 # Последня цифра числа 
 
-more = (max(a, b, c,))
-less = (min(a, b, c))
-mid = ( a + b + c) - more - less
-if more - less == mid or more + less == mid:
-    print("Число интересное")
-else:
-    print("Число неинтересное")
+# more = (max(a, b, c,))
+# less = (min(a, b, c))
+# mid = ( a + b + c) - more - less
+# if more - less == mid or more + less == mid:
+#     print("Число интересное")
+# else:
+#     print("Число неинтересное")
 
 
 # print(more, less)
@@ -97,3 +97,67 @@ else:
 #     print("Число интересное")
 # else:
 #     print("Число неинтересное")
+
+
+# a = int(input())
+# b = int(input())
+# c = int(input())
+
+# more = max(a, b, c)
+# less = min(a, b, c)
+# mid = (a + b + c) - less - more
+# print(more, mid, less, sep="\n" )
+
+# p1 = int(input()) Манхэттенское расстояние ПО МОДУЛЮ ABS
+# p2 = int(input()) 
+# q1 = int(input())
+# q2 = int(input())
+
+# print( abs(p1 - q1) + abs(p2 - q2))
+
+# print('I love C++' * 0 == '') # ВЫВОДИТ TRUE
+
+# # ЕСЛИ НАМ НУЖНО ВЫВЕСТИ "-" в большо кол-ве можно СТРОКУ УМНОЖИТЬ НА ЧИСЛО
+# print('-' * 100)
+
+# print('''"Python is a great language!", said Fred. "I don't ever remember having this much fun before."''')
+
+# # Hello <введённое имя> <введённая фамилия>! You have just delved into Python
+
+# name = input()
+# sname = input()
+
+# print(f"Hello {name} {sname}! You have just delved into Python" )
+
+# a = input()   #КОЛ-ВО БУКВ В СЛОВЕ
+# b = len(a)
+
+# print(f"Футбольная команда {a} имеет длину {b} символов")
+
+# a, b, c = input(), input(), input()
+
+# a1 = len(a)
+# b1 = len(b)
+# c1 = len(c)
+
+# more = max(a1, b1, c1)
+# less = min(a1, b1, c1)
+
+# if less == a1:
+#     print(a)
+# elif less == b1:
+#     print(b)
+# elif less == c1:
+#     print(c)
+# if more == a1:
+#     print(a) 
+# elif more == b1:
+#         print(b)
+# elif more == c1:
+#     print(c)
+
+a, b, c = len(input()), len(input()), len(input())
+if (2 * b - c - a) * (2 * c - b - a) * (2* a - b - c):
+    print("YES")
+else:
+    print("NO")
