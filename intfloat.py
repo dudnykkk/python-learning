@@ -156,8 +156,134 @@
 # elif more == c1:
 #     print(c)
 
-a, b, c = len(input()), len(input()), len(input())
-if (2 * b - c - a) * (2 * c - b - a) * (2* a - b - c):
-    print("YES")
-else:
-    print("NO")
+# a, b, c = len(input()), len(input()), len(input())
+# if (2 * b - c - a) * (2 * c - b - a) * (2* a - b - c) == 0:
+#     print("YES")
+# else:
+#     print("NO")
+
+# s = input()
+# if len(s) == 1 and s in 'aeiou':
+#     print('YES')
+
+# s = input()
+# if "синий" in s:
+#     print("YES")
+# else:
+#     print('NO')
+
+
+# day = input()  #
+
+# if "суббота" in day or "воскресенье" in day:
+#     print("YES")
+# else:
+#     print('NO')
+
+# #ПРАВИЛЬНЫЙ ЭМЭИЛ
+
+# post = input()
+# if '@' in post and '.' in post:
+#     print('YES')
+# else:
+#     print('NO')
+
+
+
+
+# *************************** MATH ****************************
+
+# num1 = sqrt(2)     # вычисление корня квадратного из двух
+# num2 = ceil(3.8)   # округление числа вверх
+# num3 = floor(3.8)  # округление числа вниз
+
+# from math import *
+
+# num1 = sqrt(2)     # вычисление корня квадратного из двух
+# num2 = ceil(3.8)   # округление числа вверх
+# num3 = floor(3.8)  # округление числа вниз
+
+# print(num1)
+# print(num2)
+# print(num3) # ДЛЯ УДОБСТВА ЧТОБЫ НЕ ПРОПИСЫВАТЬ import math можно from import math *
+
+
+# ПЛОЩАДЬ И ДЛИНА КРУГА
+
+# R = float(input())
+# s = 3.141592653589793 * pow(R, 2)
+# c = 2 * 3.141592653589793 * R
+# print(s, c, sep="\n")
+
+# from math import pi, pow
+
+# R = float(input())
+# print(pi * pow(R,2))
+# print(2 * pi * R)
+
+# from math import *
+# # x = float(input())
+# print( floor(x) + ceil(x))
+
+# 2.0
+# 2.5
+# 44.155
+# 100.50
+
+
+
+# from math import *  # ЕВКЛИДОВО РАССТОНИЕ
+# x1 = float(input())
+# y1 = float(input())
+# x2 = float(input())
+# y2 = float(input())
+
+# p = sqrt((x1 - x2)**2 + (y1 - y2)**2)
+# print(p)
+
+
+# from math import * # ТРИГОНОМЕТРИЧЕСКОЕ ВЫРАЖЕНИЕ
+# x = float(input())
+# r = radians(x) #(x * pi / 180)
+# x1 = sin(r) + cos(r) + tan(r) ** 2
+# print(x1)
+
+
+ 
+# from math import *   # Правильный многоугольник
+# n = float(input())
+# a = float(input())
+# s = (n * pow(a,2)) / (4 * tan(pi / n))
+# print(s)
+
+
+            # СРЕДНИЕ ЗНАЧЕНИЯ
+# from math import sqrt, pow
+
+# a, b = float(input()), float(input())
+
+# mid_ab = (a + b) / 2
+# mid_geo = sqrt(a * b)
+# mid_gar = (2 * a * b) / (a + b)
+# mid2ab = sqrt((a**2 + b**2) / 2)
+
+# print(mid_ab, mid_geo, mid_gar, mid2ab, sep="\n")
+
+
+# Квадратное уравнение 
+from math import sqrt, pow
+a, b, c = float(input()), float(input()), float(input())
+
+# n = a * pow(x, 2) + b * x + c = 0
+
+d = pow(b, 2) - 4 * a * c
+if d < 0:
+    print("Нет корней")
+elif d == 0: # имеет корень
+    x = -b / (2 * a)
+    print(x)
+elif d > 0: # имеет два действительных корня
+    x1 = (-b - sqrt(d)) / (2 * a)
+    x2 = (-b + sqrt(d)) / (2 * a)
+    print(min(x1, x2))
+    print(max(x1, x2))
