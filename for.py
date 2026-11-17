@@ -17,6 +17,34 @@
 # for i in range(q):
 #     print(word)
 
+# total = 0
+# for i in range(3):
+#     total = total - i
+#     print(total)
+
+
+
+# x = input()  # ПОВТОРЯЙ ЗА МНОЙ
+# for i in range(10):
+#     print(i, x)
+
+
+
+# from math import pow 
+# x = int(input())
+# for i in range(x + 1):
+#     x2 = pow(i, 2)
+#     print(f"Квадрат числа {i} равен {x2}")
+
+
+# n = int(input())
+# for i in range(n):
+#     print('*' * (n - i))
+
+m = float(input())
+p = int(input())
 n = int(input())
+p /= 100
 for i in range(n):
-    print("*******************")
+    print(i + 1, m)
+    m += m * p
