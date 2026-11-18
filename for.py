@@ -41,10 +41,54 @@
 # for i in range(n):
 #     print('*' * (n - i))
 
-m = float(input())
-p = int(input())
-n = int(input())
-p /= 100
-for i in range(n):
-    print(i + 1, m)
-    m += m * p
+# m = float(input())
+# p = int(input())
+# n = int(input())
+# p /= 100
+# for i in range(n):
+#     print(i + 1, m)
+#     m += m * p
+
+# m = int(input()) # включил в список последнее заданое число
+# n = int(input())
+# for i in range(m, n + 1):
+#     print(i)
+
+# n = int(input())  ТАБЛИЦА УМНОЖЕНИЯ
+# for i in range(1, 11):
+#     x = n * i 
+#     print(f"{n} x {i} = {x}")
+
+
+# m = int(input())
+# n = int(input())
+
+# if m or n % 17:
+
+# m, n = int(input()), int(input())
+
+# for i in range(m, n + 1):
+#     if i % 17 == 0 or i % 10 == 9 or i % 3 and 5 == 0:
+#         print(i)
+
+# m, n = int(input()), int(input())
+# if m % 2 == 0 and n % 2 == 0:
+#     for i in range(m - 1, n - 1, -2):
+#         print(i)
+# else:
+#     for i in range(m, n, -2):
+#         print(i)
+
+# m, n = int(input()), int(input())
+# for i in range(m - 1 + m % 2, n - 1, -2):
+#     print(i)
+
+m, n = int(input()), int(input())
+if m < n:
+    for i in range(m, n + 1):
+        print(i)
+elif m > n:
+    for i in range(m, n - 1, -1):
+        print(i)
+elif m == n:
+    print(m)
