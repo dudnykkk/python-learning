@@ -83,12 +83,116 @@
 # for i in range(m - 1 + m % 2, n - 1, -2):
 #     print(i)
 
-m, n = int(input()), int(input())
-if m < n:
-    for i in range(m, n + 1):
-        print(i)
-elif m > n:
-    for i in range(m, n - 1, -1):
-        print(i)
-elif m == n:
-    print(m)
+# m, n = int(input()), int(input())
+# if m < n:
+#     for i in range(m, n + 1):
+#         print(i)
+# elif m > n:
+#     for i in range(m, n - 1, -1):
+#         print(i)
+# elif m == n:
+#     print(m)
+
+# counter0 = 0    # ПОДСЧЕТ КОЛ-ВА РАЗ
+# counter = 0
+# for i in range(10):
+#     num = int(input())
+#     if num > 10:
+#         counter = counter + 1
+#     if num == 0:
+#         counter0 = counter0 + 1
+# print(f"Кол-во чисел больше 10, вводилось {counter} раз ")
+# print(f"Было введено кол-во нулей {counter0} раз")
+
+# counter = 0
+# for i in range(1, 101):
+#     if i**2 % 10 == 4:
+#         counter = counter + 1
+# print(f"Кол-во числе {counter} которым квадрат равно 4")
+
+
+# total = 0
+# for i in range(10):
+#     num = int(input())
+#     if num > 10:
+#         total = total + num
+# print(f"Сумма чисел больше 10 является {total}")
+
+# total = 0
+# for i in range(1, 101):
+#     total = i + total
+# print(f' Сумма равна ')
+
+# total = 0 
+# for i in range(10):
+#     num = int(input())
+#     total = total + num
+# average = total / 10
+# print(f'Среднее значение total = {average}')
+
+# largest = 0
+# for _ in range(10):
+#     num = int(input())
+#     if num > largest:
+#         largest = num
+# print(f"Наибольшее число = {largest}")
+
+# largest = int(input())  # принимаем первое число за максимальное
+# for _ in range(9):
+#     num = int(input())
+#     if num > largest:
+#         largest = num
+
+# print('Наибольшее число равно', largest) 
+
+# smalest = int(input())
+# for i in range(5):
+#     num = int(input())
+#     if num < smalest:
+#         smalest = num
+# print('Наименьшее число равно', smalest) 
+
+# largest = int(input())
+# smalest = largest
+# for i in range(4):
+#     num = int(input())
+#     if num > largest:
+#          largest = num
+#     if num < smalest:
+#          smalest = num
+# print(smalest, largest)
+
+# largest = None
+# smallest = None
+
+# for i in range(5):
+#   num = int(input())
+#   if largest is None or num > largest:
+#     largest = num
+#   if smallest is None or num < smallest:
+#     smallest = num
+
+# print(smallest, largest)
+
+
+# prod = 1
+# for i in range(-7, -3, 1):
+#     if i < -5:
+#         prod = prod * i
+
+# print(prod)
+
+
+num = int(input())
+flag = True
+
+for i in range(2, num):
+    if num % i == 0:  #  если исходное число делится на какое-либо отличное от 1 и самого себя
+        flag = False
+
+if num == 1:
+    print('Это единица, она не простая и не составная') 
+elif flag == True:
+    print('Число простое')
+else:
+    print('Число составное')
