@@ -171,28 +171,113 @@
 #     largest = num
 #   if smallest is None or num < smallest:
 #     smallest = num
-
 # print(smallest, largest)
+
+
 
 
 # prod = 1
 # for i in range(-7, -3, 1):
 #     if i < -5:
 #         prod = prod * i
-
 # print(prod)
 
 
-num = int(input())
-flag = True
 
-for i in range(2, num):
-    if num % i == 0:  #  если исходное число делится на какое-либо отличное от 1 и самого себя
-        flag = False
 
-if num == 1:
-    print('Это единица, она не простая и не составная') 
-elif flag == True:
-    print('Число простое')
-else:
-    print('Число составное')
+
+# num = int(input())
+# flag = True
+# for i in range(2, num):
+#     if num % i == 0:  #  если исходное число делится на какое-либо отличное от 1 и самого себя
+#         flag = False
+# if num == 1:
+#     print('Это единица, она не простая и не составная') 
+# elif flag == True:
+#     print('Число простое')
+# else:
+#     print('Число составное')
+
+
+
+
+# a = int(input())
+# b = int(input())
+# counter = 0
+# for i in range(a, b + 1):
+#     if i % 10 == 4 or i % 10 == 9:
+#         counter += 1
+# print(counter)
+
+
+
+# n = int(input()) # переменная n
+# total = 0 # счетчик с изначальным значением 0
+# for _ in range(n):
+#     num = int(input())
+#     total += num
+# print(total)
+
+
+
+# from math import log                  ТУТ ПРАВИЛЬНО
+# total = 0  
+# n = int(input())
+# for i in range(1, n + 1):
+#     total += 1 / i
+# print(total - log(n))
+#     # total +=num
+
+
+
+
+# n = int(input())                          СУММА ЧИСЕЛ 2
+# total = 0
+# for i in range(1, n + 1):
+#     if i ** 2 % 10 == 2 or i ** 2 % 10 == 5 or i ** 2 % 10 == 8:
+#         total = total + i
+# print(total)
+                                    # ОПТИМИЗИРОВАННЫЙ КОД НИЖЕ
+
+# n = int(input())
+# sm = 0
+# for i in range(5, n + 1, 10):
+#     sm += i
+# print(sm)
+
+
+# for i in range(1, 6 + 1):
+#     print("*" * i)
+
+# n = int(input())
+# for i in range(n):
+#     print('*' * (n - i))
+
+
+# from math import factorial             ФАКТОРИАЛ ЧИСЕЛ
+# total = 1
+# n = int(input())
+# for i in range(1, n + 1):
+#     total = i * total
+# print(total)
+
+# from math import factorial
+# n = int(input())
+# print(factorial(n))
+
+
+# total = 1                             ИЗБЕГАТЬ ЧИСЛО 0
+# for i in range(1, 10 + 1):
+#     num = int(input())
+#     if num != 0:
+#         total = total * num
+# print(total)
+
+
+counter = 0
+n = int(input())
+for i in range(1, n + 1):
+    if n % i == 0:
+        counter = counter + i
+        # total = counter + n
+print(counter)
