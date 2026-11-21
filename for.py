@@ -274,10 +274,111 @@
 # print(total)
 
 
-counter = 0
+# n = int(input())                      #Сумма делителей
+
+# total = 0 
+# for i in range(1, n + 1):
+#     if n % i == 0:
+#         total = total + i
+# print(total)
+
+
+
+
+# total = 0                              # ТОЛЬКО ЧЕТНЫЕ ЧИСЛА ДВА РЕШЕНИЯЯ 
+# for i in range(10):
+#     a = int(input())
+#     if a % 2 == 0:
+#         total = total + 1
+# if total == 10:
+#     print("YES")
+# else:
+#     print("NO")
+
+# flag = 'YES'
+# for _ in range(10):
+#     n = int(input())
+    
+#     if n % 2 == 1:
+#         flag = 'NO'
+
+# print(flag)
+
+
+#                     #   ЗНАКОЧЕРЕДУЮЩАЯ СУММА
+# total = 0
+# n = int(input())
+# for i in range(1, n + 1):
+#     if i % 2 == 0:
+#         total -= i
+#     elif i % 2 == 1:
+#         total += i
+# print(total)
+
+
+
+
+#  largest = 0
+# for _ in range(10):
+#     num = int(input())
+#     if num > largest:
+#         largest = num
+# print(f"Наибольшее число = {largest}")
+
+# largest = int(input())  # принимаем первое число за максимальное
+# for _ in range(9):
+#     num = int(input())
+#     if num > largest:
+#         largest = num
+
+# print('Наибольшее число равно', largest) 
+
+# smalest = int(input())
+# for i in range(5):
+#     num = int(input())
+#     if num < smalest:
+#         smalest = num
+# print('Наименьшее число равно', smalest) 
+
+# largest = int(input())
+# smalest = largest
+# for i in range(4):
+#     num = int(input())
+#     if num > largest:
+#          largest = num
+#     if num < smalest:
+#          smalest = num
+# print(smalest, largest)
+
+# largest = None
+# smallest = None
+
+# for i in range(5):
+#   num = int(input())
+#   if largest is None or num > largest:
+#     largest = num
+#   if smallest is None or num < smallest:
+#     smallest = num
+# print(smallest, largest)
+
+# largest = None
+# largest2 = None
+# n = int(input())
+# for _ in range(n):
+#     num = int(input())
+#     if largest is None or num > largest:
+#         largest2 = largest
+#         largest = num
+#     elif largest2 is None or num > largest2:
+#         largest2 = num  
+# print(largest)
+# print(largest2)
+
+f1 = 0
+f2 = 1
+
 n = int(input())
-for i in range(1, n + 1):
-    if n % i == 0:
-        counter = counter + i
-        # total = counter + n
-print(counter)
+for i in range(n):
+    f1, f2 = f2, f1 + f2
+    print(f2, end=" ")
+    
