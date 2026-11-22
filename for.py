@@ -374,11 +374,142 @@
 # print(largest)
 # print(largest2)
 
-f1 = 0
-f2 = 1
+# f1 = 0
+# f2 = 1
 
-n = int(input())
-for i in range(n):
-    f1, f2 = f2, f1 + f2
-    print(f2, end=" ")
+# n = int(input())
+# for i in range(n):
+#     f1, f2 = f2, f1 + f2
+#     print(f1, end=" ")
     
+
+
+
+
+
+
+
+
+# WHILE  WHILE  WHILE  WHILE  WHILE  WHILE  WHILE  WHILE  WHILE  WHILE  WHILE  WHILE
+
+
+
+
+
+
+# n = int(input())
+# while n < 10:
+#     print("!!!!!!")
+#     n += 1
+
+# num = int(input())
+# while num != -1:
+#     print('Квадрат вашего числа равен:', num * num)
+#     num = int(input())
+
+# text = input()
+# total = 0
+# while text != 'stop':
+#     total = total + int(text)
+#     text = input()
+# print('Сумма чисел равна', total)
+
+
+
+
+# num = int(input())
+# total = 0
+
+# while num > -4:
+#     num = int(input())
+#     total += num
+
+# print(total)
+
+
+# name = input()
+# while len(name) > 5:
+#     print(name)
+#     # name = input()
+
+# name = input()              #ПОКА НЕ ВЫВЕДЕТ КОНЕЦ
+
+# while name != "КОНЕЦ":
+#     print(name)
+#     name = input()
+
+# text = input()              #ПОКА НЕ ВЫВЕДЕТ КОНЕЦ ИЛИ конец но AND!!!
+
+# while text != "КОНЕЦ" and text != "конец":
+#     print(text)
+#     text = input()
+
+
+                                 
+                                    # КОЛ-ВО ЧЛЕНОВ
+# name = input()
+# total = 0
+# while name != "стоп"and name != "хватит" and name != "достаточно":
+#     name = input()
+#     total += 1
+# print(total)
+
+# num = int(input())
+# while num % 7 == 0:
+#     print(num)
+#     num = int(input())
+
+
+
+# num = int(input())             # ПОКА ЧИСЛО РАВНО 7 ВЫВОДИМ ЕГО
+# stock = ""
+# while num % 7 == 0:
+#     stock += str(num) + "\n"
+#     num = int(input())
+# print(stock)
+
+
+
+                            #СУММА ВСЕХ ВВЕДЕННЫХ ЧИСЕЛ ДО ОТРИЦАТЕЛЬНОГО
+
+# num = int(input())
+
+# total = 0
+# while num >= 0:
+#     total = num + total
+#     num = int(input())
+# print(total)
+
+# num = int(input())    # ЧИСЛО РАВНЯЕТСЯЯ И 5 И СУММУ КОЛ-ВА
+
+# counter = 0
+# while 0 < num <= 5:
+#     if num == 5:
+#         counter +=1
+#     num = int(input())
+# print(counter)
+
+# while num == 5:
+#     counter += 1
+#     num = int(input())
+# print(counter)
+
+
+
+n = input()
+
+while "_" in n:
+    n = input()
+print(n)
+
+
+name = input()
+name2 = input()
+
+counter = 0
+while name != "Александра":
+    name = input()
+    while name2 != "Левон":
+        counter += 1
+        name2 = input()
+    print(counter)
