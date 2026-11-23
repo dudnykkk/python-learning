@@ -496,20 +496,59 @@
 
 
 
-n = input()
+# n = input()
 
-while "_" in n:
-    n = input()
-print(n)
+# while "_" in n:
+#     n = input()
+# print(n)
 
 
-name = input()
-name2 = input()
+# name = input()
 
-counter = 0
-while name != "Александра":
-    name = input()
-    while name2 != "Левон":
-        counter += 1
-        name2 = input()
-    print(counter)
+# while name != "Александра":
+#     name = input()
+
+# counter = 0
+# name2 = input()
+# while name2 != "Левон":
+#     counter += 1
+#     name2 = input()
+# print(counter)
+
+
+# n = int(input())
+
+# counter = 0
+# while n != 0:
+#     if n >= 25:
+#         n -= 25
+#         counter += 1
+#     elif n >= 10:
+#         n -= 10
+#         counter +=1
+#     elif n >= 5:
+#         n -= 5
+#         counter +=1
+#     elif n >= 1:
+#         n -= 1
+#         counter += 1
+# print(counter)
+
+
+
+# 1. Считываем входные данные
+h1 = int(input())
+m1 = int(input())
+h2 = int(input())
+m2 = int(input())
+
+start_minutes = h1 * 60 + m1
+end_minutes = h2 * 60 + m2
+
+current_minutes = start_minutes
+
+while current_minutes <= end_minutes:
+    h = current_minutes // 60
+    m = current_minutes % 60
+    print(f"{h:02d}:{m:02d}")
+    current_minutes += 1
