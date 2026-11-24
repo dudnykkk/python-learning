@@ -537,18 +537,30 @@
 
 
 # 1. Считываем входные данные
-h1 = int(input())
-m1 = int(input())
-h2 = int(input())
-m2 = int(input())
+# h1 = int(input())
+# m1 = int(input())
+# h2 = int(input())
+# m2 = int(input())
 
-start_minutes = h1 * 60 + m1
-end_minutes = h2 * 60 + m2
+# start_minutes = h1 * 60 + m1
+# end_minutes = h2 * 60 + m2
 
-current_minutes = start_minutes
+# current_minutes = start_minutes
 
-while current_minutes <= end_minutes:
-    h = current_minutes // 60
-    m = current_minutes % 60
-    print(f"{h:02d}:{m:02d}")
-    current_minutes += 1
+# while current_minutes <= end_minutes:
+#     h = current_minutes // 60
+#     m = current_minutes % 60
+#     print(f"{h:02d}:{m:02d}")
+#     current_minutes += 1
+
+
+# num = int(input())                                # считываем число
+# while num != 0:                                   # проверяем, что цифры числа не закончились
+#     last_digit = num % 10                         # получаем последнюю цифру числа
+#     ...                                           # обрабатываем последнюю цифру числа
+#     num = num // 10 
+# print(num)
+
+num = 1
+num = num % 10
+print(num)
