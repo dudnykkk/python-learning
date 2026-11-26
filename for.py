@@ -579,3 +579,19 @@ while num > 0:
     last_digit = num % 10
     num //= 10
     print(last_digit, end="")
+
+
+num = int(input())
+total = len(str(num))
+s = input()  # Считываем число сразу как строку (не переводим в int)
+max_digit = max(s)
+min_digit = min(s)
+print('Максимальная цифра равна', max_digit)
+print('Минимальная цифра равна', min_digit)
+
+
+num = int(input())
+
+l = 0
+m = 0 
+a = 1
