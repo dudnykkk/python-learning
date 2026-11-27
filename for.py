@@ -574,24 +574,57 @@
 #     print()
 
 
+# num = int(input())
+# while num > 0:
+#     last_digit = num % 10
+#     num //= 10
+#     print(last_digit, end="")
+
+
+# num = int(input())
+# total = len(str(num))
+# s = input()  # Считываем число сразу как строку (не переводим в int)
+# max_digit = max(s)
+# min_digit = min(s)
+# print('Максимальная цифра равна', max_digit)
+# print('Минимальная цифра равна', min_digit)
+
+
+# num = int(input())
+
+# l = 0  # кол-во цифр
+# m = 0  # сумма цифр
+# p = 1  # произведение
+# last_digit = num % 10
+# first_digit = num // 10
+
+# while num > 0:
+#     l = l + 1
+#     m = m + (num % 10)
+#     p = p * (num % 10)
+#     a = m / l
+#     num = num // 10
+# sum_first_last = first_digit + last_digit
+# print(l, m, p, a, sum_first_last, sep="\n")
+
+
 num = int(input())
+
+l = 0  # кол-во цифр
+m = 0  # сумма цифр
+p = 1  # произведение
+last_digit = num % 10
+
 while num > 0:
-    last_digit = num % 10
-    num //= 10
-    print(last_digit, end="")
+    digit = num % 10
+    
+    l = l + 1
+    m = m + digit
+    p = p * digit
+    a = m / l
+    
+    first_digit = digit
+    num = num // 10
 
-
-num = int(input())
-total = len(str(num))
-s = input()  # Считываем число сразу как строку (не переводим в int)
-max_digit = max(s)
-min_digit = min(s)
-print('Максимальная цифра равна', max_digit)
-print('Минимальная цифра равна', min_digit)
-
-
-num = int(input())
-
-l = 0
-m = 0 
-a = 1
+sum_first_last = first_digit + last_digit
+print(m, l, p, a, first_digit, sum_first_last, sep="\n")
